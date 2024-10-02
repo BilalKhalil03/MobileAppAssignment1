@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Initialize UI elements for mortgage calculator
+        //UI stuff for mortgage calculator
         mortgageAmount = findViewById(R.id.mortgageAmount);
         interestRate = findViewById(R.id.interestRate);
         amortizationPeriod = findViewById(R.id.amortizationPeriod);
@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
         resultText = findViewById(R.id.resultText);
         calculateButton = findViewById(R.id.calculateButton);
 
-        // Set click listener for the calculate button
+        // Onclicklistener for the calculate button
         calculateButton.setOnClickListener(v -> calculateMortgage());
     }
-
+        //Calculation stuff
     private void calculateMortgage() {
         double principal = Double.parseDouble(mortgageAmount.getText().toString());
         double annualInterestRate = Double.parseDouble(interestRate.getText().toString()) / 100;
