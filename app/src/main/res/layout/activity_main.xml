@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/mortgageAmount"
+            android:layout_width="380dp"
+            android:layout_height="67dp"
+            android:hint="Mortgage Amount"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/interestRate"
+            android:layout_width="380dp"
+            android:layout_height="63dp"
+            android:hint="Interest Rate (%)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/amortizationPeriod"
+            android:layout_width="378dp"
+            android:layout_height="72dp"
+            android:hint="Amortization Period (Years)"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/paymentFrequency"
+            android:layout_width="380dp"
+            android:layout_height="51dp"
+            android:entries="@array/payment_frequencies" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:text="Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Result will appear here"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
